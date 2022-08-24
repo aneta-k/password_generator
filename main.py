@@ -10,4 +10,4 @@ i = 0
 while i <= password_lenght:
     new_password += choice(string_with_all_characters)
     i += 1
-print(new_password)
+print(f'Your new password is: {new_password}')
