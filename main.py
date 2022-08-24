@@ -36,4 +36,3 @@ shuffle(new_password)
 new_password = "".join(new_password)
 pyperclip.copy(new_password)
 print(f'Your new password is: {new_password}')
-
