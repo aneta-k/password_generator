@@ -1,6 +1,6 @@
 from random import choice, randint, sample, shuffle
 import string
-import pyperclip       
+import pyperclip
 
 password_length = int(input('How many characters do you want for your passwor, must be more than 4: ')) 
 while password_length < 4:
