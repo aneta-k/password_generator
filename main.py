@@ -12,18 +12,23 @@ uppercase = string.ascii_uppercase
 digits = string.digits
 punctuation = string.punctuation
 
-a = randint(1, (password_lenght - 3))
-print(a)
+bucket_of_variables = (lowercase, uppercase, digits, punctuation)
 
-b = randint(1, (password_lenght - a - 2))
-print(b)
+lenght_1 = randint(1, (password_lenght - 3))
+print(lenght_1)
 
-c = randint(1, (password_lenght - a- b - 1))
-print(c)
+lenght_2 = randint(1, (password_lenght - lenght_1 - 2))
+print(lenght_2)
 
-d = password_lenght - a - b - c
-print(f'koniec{d}')
+lenght_3 = randint(1, (password_lenght - lenght_1 - lenght_2 - 1))
+print(lenght_3)
 
+lenght_4 = password_lenght - lenght_1 - lenght_2 - lenght_3
+print(f'koniec{lenght_4}')
+
+variable_1 = choice(bucket_of_variables)
+
+print(variable_1) 
 # i = 0
 # while i <= password_lenght:
 #     new_password += choice(string_with_all_characters)
